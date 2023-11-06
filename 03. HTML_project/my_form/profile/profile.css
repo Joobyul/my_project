@@ -1,0 +1,175 @@
+/*.body {
+        background-image: url('moving.gif');
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: -300%;
+        background-size: auto;
+}*/
+
+#personal_box{
+	display :inline-block;
+	text-align: center;
+	width: 1050px;
+}
+#personal_box > #top_box{
+	display: inline-block;
+	width:100%;
+	height: 300px;
+	
+	padding:60px ;
+	box-sizing: border-box;
+}
+
+#top_box > #left_box{
+	float: left;
+	width:200px;
+	height:200px;
+	/*border: 1px solid rgb(0, 0, 0);*/
+	
+}
+#top_box > #left_box img{
+	width:200px;
+	height:200px;
+	
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+	
+}
+#top_box > #right_box > #title{
+	
+	font-size:30px;
+	font-weight: bold;
+}
+#top_box > #right_box > .message{
+	
+	margin-top:1rem;
+	margin-left:0.5rem;
+}
+#top_box > #right_box{
+	float: right;
+	width: 70%;
+	height: 90%;
+	
+	text-align:left;
+	padding-left: 20px;
+	color: rgb(0, 0, 0);
+	
+	
+	/*box-shadow: 1px 1px 3px rgba(0,0,0,0.2);*/
+	
+	
+}
+#personal_box > .bottom_box{
+	display: inline-block;
+	float:none;
+	width:100%;
+	padding:60px ;
+	box-sizing: border-box;
+	
+	text-align: left;
+}
+#personal_box > .bottom_box > .title{
+	
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+.line{
+	display: inline-block;
+	width:100%;
+	height:1px;
+	
+	border-top:1px solid rgba(100,100,100,0.2);
+	
+}
+
+.bottom_box > .description_box{
+	margin-top:1rem;
+	
+	width: 100%;
+	
+	padding:1rem;
+	box-sizing:border-box;
+	
+	border-radius: 20px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
+}
+
+
+.bottom_box .animation_parent{
+	position:relative;
+	overflow:hidden;
+	
+	display:inline-block;
+	background:rgba(200,200,200,0.2);
+	width:100%;
+	height:30px;
+	
+	border-radius:25px;
+	
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+	
+}
+
+.bottom_box .progress_content{
+	
+	padding:1rem;
+	
+}
+.bottom_box .progress_description{
+	
+	padding:1rem;
+	
+}
+
+
+.bottom_box .progress_section{
+	display:inline-block;
+	width:100%;
+	margin-top:20px;
+	
+}
+
+.bottom_box .animation_progress{
+	position: absolute;
+	
+	display:inline-block;
+	background:rgba(250,200,250,0.9);
+	
+	
+	width:var(--animate_width);
+	height:30px;
+	opacity:1;
+	
+	border-radius:25px;
+	
+	text-align:right;
+	box-sizing:border-box;
+	padding:0.5rem;
+	
+	color:white;
+	
+	transition: 0.5s;
+	
+}
+.bottom_box .animation_progress:hover{
+	
+	opacity:0.5;
+	
+}
+.bottom_box .animate_width{
+	animation: 3s ease-in-out progressin;
+}
+
+
+@keyframes progressin {
+  from {
+    width:0%;
+	opacity:0.4;
+  }
+  to {
+    width:var(--animate_width);
+	opacity:1;
+  }
+}
